@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 const App = () => {
   return (
     <div className='w-full h-screen bg-[#000000] text-white'>
-      <Navbar />
+      <Header />
     </div>
   )
 }
