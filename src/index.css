@@ -23,6 +23,7 @@
 }
 *{
   font-family: "RhythmRegular";
+  text-decoration: none;
 }
 .our-work{
     overflow: hidden;
@@ -80,7 +81,7 @@ a{
     } 
   }
   .active{
-        animation:anim 5s ease-in-out infinite;
+        animation:anim 3s ease-in-out infinite;
   }
   @keyframes anim {
     0%{

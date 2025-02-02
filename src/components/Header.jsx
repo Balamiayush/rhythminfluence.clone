@@ -11,7 +11,7 @@ const Header = () => {
       divs[currentIndex].classList.add("active");
       currentIndex = (currentIndex + 1) % divs.length;
     }
-    const interval = setInterval(animate, 9000);
+    const interval = setInterval(animate, 3000);
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
   const Variants = {

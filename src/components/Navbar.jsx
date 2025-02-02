@@ -3,7 +3,6 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-
     <motion.nav 
     initial={{
       y: -10,

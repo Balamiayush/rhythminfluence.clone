@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Page2 from './components/Page2';
+import Page3 from './components/Page3';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -35,7 +36,7 @@ const App = () => {
 
     return () => {
       lenis.destroy(); // Cleanup Lenis on unmount
-      gsap.ticker.remove(() => lenis.raf(time * 1000)); // Remove GSAP ticker reference
+      gsap.ticker.remove(() => lenis.raf(time * 5000)); // Remove GSAP ticker reference
     };
   }, []);
 
@@ -43,6 +44,7 @@ const App = () => {
     <div className='w-full bg-[#000000] text-white'>
       <Header />
       <Page2 />
+      <Page3 />
     </div>
   );
 };
