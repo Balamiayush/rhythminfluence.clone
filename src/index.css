@@ -21,6 +21,9 @@
   font-family: "RhythmMedium";
   src: url("./fonts/Aeonik-Medium.ttf");
 }
+body{
+  overflow: hidden;
+}
 *{
   font-family: "RhythmRegular";
   text-decoration: none;

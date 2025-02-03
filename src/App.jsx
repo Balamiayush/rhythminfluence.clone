@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import Header from './components/Header';
 import Page2 from './components/Page2';
 import Page3 from './components/Page3';
+import Page4 from './components/Page4';
 import Lenis from 'lenis';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -41,10 +42,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className='w-full bg-[#000000] text-white'>
+    <div className='w-full  relative bg-[#000000] text-white'>
       <Header />
       <Page2 />
       <Page3 />
+      <Page4 />
     </div>
   );
 };

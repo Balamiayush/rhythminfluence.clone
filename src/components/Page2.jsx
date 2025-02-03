@@ -20,12 +20,12 @@ const Page2 = () => {
       opacity: 1,
       y: 0,
       duration: 1,
-      stagger: 0.5, // Each character animates with a small delay
+      stagger: 1, // Each character animates with a small delay
       scrollTrigger: {
         trigger: ".maindiv",
         start: "top 80%",
         end: "bottom 20%",
-        scrub: true,
+        scrub: 2,
         scroller: document.body, // Sync with Lenis
       },
     });
@@ -34,7 +34,7 @@ const Page2 = () => {
     gsap.to(".box", {
       width: "20vh",
       duration: 0.8,
-      stagger: 0.3,
+      stagger: 0.5,
       scrollTrigger: {
         trigger: ".maindiv",
         start: "top 90%",
@@ -49,7 +49,7 @@ const Page2 = () => {
   }, []);
 
   return (
-    <div className="w-full h-[200vh] text-center flex flex-col leading-none text-4xl text-[5.813rem] items-center mt-10">
+    <div className="w-full  text-center flex flex-col leading-none text-4xl text-[5.813rem] items-center mt-10">
       <div className="flex items-center maindiv font-bold justify-center capitalize">
         <span>{splitText("From")}</span>
         <div className="w-0 h-20 box bg-red-500"></div>
